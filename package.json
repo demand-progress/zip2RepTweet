@@ -1,0 +1,16 @@
+{
+  "name": "kadist-agreement-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "now dev",
+    "deploy": "now"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^11.2.0",
+    "ramda": "^0.27.0"
+  }
+}
