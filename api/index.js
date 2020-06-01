@@ -14,9 +14,7 @@ module.exports = async (req, res) => {
     })
     body = reps.body
   } catch (e) {
-    return res.send({
-      error: 'Could not find Rep'
-    })
+    return res.send([])
   }
   const getId = path(['id', 'bioguide'])
   const getLatestTerm = pipe(
@@ -50,6 +48,6 @@ module.exports = async (req, res) => {
     uniq,
     map(getId)
   )(body.results)
-  const socials = legIds.map(lId => find(pathEq(['id', 'bioguide'], lId), legSocial).social.twitter)
+  const socials = legIds.map(lId => find(pathEq(['id', 'bioguide'], lId), legSocial).social.twitter).map(s => `@${s}`)
   res.send(socials)
 }
