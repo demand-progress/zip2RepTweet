@@ -1,7 +1,8 @@
 # zip2RepTweet
 get twitter handles for a zip code
 
-[`https://zip-2-rep-tweet.now.sh/?zipcode=94610`](https://zip-2-rep-tweet.now.sh/?zipcode=94610)
+* just twitter [`https://zip-2-rep-tweet.now.sh/?zipcode=94610`](https://zip-2-rep-tweet.now.sh/?zipcode=94610)
+* everything [`https://zip-2-rep-tweet.now.sh/?zipcode=94610&raw=true`](https://zip-2-rep-tweet.now.sh/?zipcode=94610&raw=true)
 
 deployed using [vercel](https://vercel.com)
 
